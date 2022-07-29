@@ -1,7 +1,8 @@
 body{
-    background: linear-gradient(#d8adad, #a2a6d5);
+    background: linear-gradient(#44afe5, #296989);
     background-repeat: no-repeat;
 background-attachment: fixed;
+overflow: hidden;
 }
 
 .tempContainer{
@@ -12,26 +13,49 @@ background-attachment: fixed;
     width: 550px;
     height: 725px;
     text-align: center;
-    background:rgba(255, 255, 255, 0.26)
+    background:rgba(0, 0, 0, 0.502);
+    color: rgb(224, 224, 224);
+    position: relative;
+    animation-duration: 0.8s;
+    animation-name: slidein;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@keyframes slidein{
+    from{
+        margin-top: 150%;
+    }
+
+    to{
+        margin-top: 0%;
+    }
 }
 
 
-.icon img{
-    image-rendering: auto;
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-    height: 18rem;
-    width: 18rem;
-}
 
 .temp{
     font-size: 100px;
 }
 
 .weather{
-    font-size: 80px;
+    font-size: 68px;
+    position: relative;
+    bottom: 60px;
 }
 
 .location{
     font-size: 50px;
 }
+
+.smallContainer{
+    position: relative;
+    left: 12px;
+    top: 30px;
+    font-size: 18px;
+    width: 185px;
+    height: 100px;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+
