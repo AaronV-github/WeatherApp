@@ -20,7 +20,7 @@ navigator.geolocation.getCurrentPosition((position)=>{
 
 
   //Api key and the link of the openweather api service
-  const key='2beed9751f4037c27f5eac99456c9f93';
+  const key=MY_API_KEY;
   let url=`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}`
 
   //Fetches the api and then changes the state
